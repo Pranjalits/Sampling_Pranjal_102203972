@@ -1,0 +1,14 @@
+Model-wise Observations:
+
+M1 (Logistic Regression): Sampling3 yields the best accuracy (93.53%), suggesting SMOTE provides optimal balance for this model.
+M2 (Random Forest): Sampling1 and Sampling5 (99.14%) perform equally well, indicating both Random Oversampling and ADASYN are robust for this ensemble model.
+M3 (XGBoost): Sampling5 (99.14%) edges out others, demonstrating that ADASYN handles imbalanced data best for boosting-based models.
+M4 (SVC): Sampling1 (87.5%) stands out, showcasing the importance of Random Oversampling for SVMs.
+M5 (KNN): Sampling1 (97.84%) again takes the lead, indicating Random Oversampling complements distance-based models.
+
+
+Sampling Techniques:
+
+Sampling1 (Random Oversampling) is most effective across multiple models (M2, M4, M5), indicating its ability to improve performance universally.
+Sampling5 (ADASYN) also demonstrates strength (M2, M3), excelling in more complex models.
+SMOTE (Sampling3) is particularly useful for M1, showing its value in models sensitive to class distributions.
